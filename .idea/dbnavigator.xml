@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -15,7 +15,7 @@
     <connection id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8">
       <console name="MySQL JobListing Connection" type="STANDARD" schema="JobListingDatabase" session="Main"><![CDATA[select * from Candidates
 
-delete from `Candidates` where `CandidateID` > '6';]]></console>
+select * from Candidates where Email='christopherstewartsep@gmail.com' AND Password='Batman&robin1966';]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -25,15 +25,14 @@ delete from `Candidates` where `CandidateID` > '6';]]></console>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" object-ref="schemas/JobListingDatabase/tables/Candidates" />
-      <object connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" object-ref="schemas/JobListingDatabase/tables/MatchScore" />
-      <object connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" object-ref="schemas/JobListingDatabase/tables/JobListing" />
+      <object connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" object-ref="schemas/joblistingdatabase/tables/candidates" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" dataset="JobListingDatabase.MatchScore" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" dataset="JobListingDatabase.Candidates" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" dataset="JobListingDatabase.JobListing" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" dataset="joblistingdatabase.candidates" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />

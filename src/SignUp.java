@@ -2,10 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class SignUp extends JDialog {
     private JPanel panel1;
@@ -89,15 +86,15 @@ public class SignUp extends JDialog {
     private User addUsertoDatabase(int id, String FirstName, String LastName, String email, String password) {
         //add user to database
         User user = null;
-        String url = "jdbc:mysql://localhost:3306/JobListingDatabase";
-        String usernameToDatabase = "root";
-        String passwordToDatabase = "1723";
+        final String url = "jdbc:mysql://localhost:3306/JobListingDatabase";
+        final String usernameToDatabase = "root";
+        final String passwordToDatabase = "1723";
         try {
             DatabaseConnectionManager.connect(url, usernameToDatabase, passwordToDatabase);
             Connection con = DatabaseConnectionManager.getConnection();
             Statement stmt = con.createStatement();
             String sql = "INSERT INTO Candidates (CandidateID, FirstName, LastName, Email, Password)" + "VALUES( ?, ?, ?, ?, ?)";
-            java.sql.PreparedStatement preparedStmt = con.prepareStatement(sql);
+            PreparedStatement preparedStmt = con.prepareStatement(sql);
             preparedStmt.setInt(1, id);
             preparedStmt.setString(2, FirstName);
             preparedStmt.setString(3, LastName);
