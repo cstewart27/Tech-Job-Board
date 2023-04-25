@@ -28,7 +28,9 @@ delete from Candidates where CandidateID = 6;]]></console>
     </last-used-providers>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" object-ref="schemas/JobListingDatabase/tables/Candidates" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" dataset="JobListingDatabase.MatchScore" active-filter-id="EMPTY_FILTER" />

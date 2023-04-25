@@ -63,12 +63,8 @@ public class SignIn extends JDialog{
     private User getAuthenticatedUser(String email, String password){
         User user = null;
 
-        final String url = "jdbc:mysql://localhost:3306/JobListingDatabase";
-        final String usernameToDatabase = "root";
-        final String passwordToDatabase = "1723";
-
         try{
-            Connection conn = DriverManager.getConnection(url, usernameToDatabase, passwordToDatabase);
+            Connection conn = DriverManager.getConnection(DatabaseConnectionManager.url, DatabaseConnectionManager.usernameToDatabase, DatabaseConnectionManager.passwordToDatabase);
 
             Statement stmt = conn.createStatement();
             String sql = "select * from Candidates where Email=? AND Password=?";

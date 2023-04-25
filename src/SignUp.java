@@ -69,12 +69,8 @@ public class SignUp extends JDialog {
                 //if all are false, then create account
                 //else, display error message
 
-                final String url = "jdbc:mysql://localhost:3306/JobListingDatabase";
-                final String usernameToDatabase = "root";
-                final String passwordToDatabase = "1723";
                 try {
-                    DatabaseConnectionManager.connect(url, usernameToDatabase, passwordToDatabase);
-                    Connection con = DatabaseConnectionManager.getConnection();
+                    Connection con = DriverManager.getConnection(DatabaseConnectionManager.url, DatabaseConnectionManager.usernameToDatabase, DatabaseConnectionManager.passwordToDatabase);
                     Statement stmt = con.createStatement();
 
                     //used to auto increment the primary key rather than editing the database
@@ -109,12 +105,9 @@ public class SignUp extends JDialog {
     private User addUsertoDatabase(int id, String FirstName, String LastName, String email, String password) {
         //add user to database
         User user = null;
-        final String url = "jdbc:mysql://localhost:3306/JobListingDatabase";
-        final String usernameToDatabase = "root";
-        final String passwordToDatabase = "1723";
+
         try {
-            DatabaseConnectionManager.connect(url, usernameToDatabase, passwordToDatabase);
-            Connection con = DatabaseConnectionManager.getConnection();
+            Connection con = DriverManager.getConnection(DatabaseConnectionManager.url, DatabaseConnectionManager.usernameToDatabase, DatabaseConnectionManager.passwordToDatabase);
             Statement stmt = con.createStatement();
             String sql = "INSERT INTO Candidates (CandidateID, FirstName, LastName, Email, Password)" + "VALUES( ?, ?, ?, ?, ?)";
 

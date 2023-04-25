@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/testingPassingUserData.java" afterDir="false" />
+    <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="pass data from signin and signup to homegui">
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePageGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePageGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RetrieveData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RetrieveData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SignIn.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignIn.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatabaseConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RetrieveData.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testingPassingUserData.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682272185790</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="pass data from signin and signup to homegui">
+      <created>1682442995480</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682442995480</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,7 +151,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial Commit" />
     <MESSAGE value="add signIn gui and update signUP" />
-    <option name="LAST_COMMIT_MESSAGE" value="add signIn gui and update signUP" />
+    <MESSAGE value="pass data from signin and signup to homegui" />
+    <option name="LAST_COMMIT_MESSAGE" value="pass data from signin and signup to homegui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -156,42 +163,42 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>161</line>
+          <line>154</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>154</line>
+          <line>147</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>156</line>
+          <line>149</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>157</line>
+          <line>150</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>159</line>
+          <line>152</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>160</line>
+          <line>153</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>158</line>
+          <line>151</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>155</line>
+          <line>148</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
