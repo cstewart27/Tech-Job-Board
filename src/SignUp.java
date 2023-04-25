@@ -63,11 +63,28 @@ public class SignUp extends JDialog {
             JOptionPane.showMessageDialog(null, "Please fill in all fields");
         } else {
             if (password.equals(passwordConfirm2)) {
-                //check if username already exists
-                //check if email already exists
-                //check if phone already exists
-                //if all are false, then create account
-                //else, display error message
+
+                //check if the email already exists in the database
+                try{
+                    Connection conn = DriverManager.getConnection(DatabaseConnectionManager.url, DatabaseConnectionManager.usernameToDatabase, DatabaseConnectionManager.passwordToDatabase);
+                    Statement stmt = conn.createStatement();
+                    String sql = "SELECT * FROM Candidates WHERE Email = ?";
+                    PreparedStatement preparedStatement = conn.prepareStatement(sql);
+                    preparedStatement.setString(1, email);
+                    ResultSet rs = preparedStatement.executeQuery();
+                    if(rs.next()){
+                        JOptionPane.showMessageDialog(null, "Email already exists");
+                        return;
+                    }
+
+                    rs.close();
+                    stmt.close();
+                    conn.close();
+
+                }
+                catch (SQLException e){
+                    throw new RuntimeException(e);
+                }
 
                 try {
                     Connection con = DriverManager.getConnection(DatabaseConnectionManager.url, DatabaseConnectionManager.usernameToDatabase, DatabaseConnectionManager.passwordToDatabase);
