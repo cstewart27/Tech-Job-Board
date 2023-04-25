@@ -39,6 +39,16 @@ public class SignIn extends JDialog{
             }
         });
 
+        signUpButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                dispose();
+                SignUp signUp = new SignUp(null);
+
+            }
+        });
+
         setVisible(true);
 
     }
