@@ -15,7 +15,11 @@
     <connection id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8">
       <console name="MySQL JobListing Connection" type="STANDARD" schema="JobListingDatabase" session="Main"><![CDATA[select * from Candidates
 
-select * from Candidates where Email='christopherstewartsep@gmail.com' AND Password='Batman&robin1966';]]></console>
+update Candidates 
+set Location = 'Unspecified', Desired_Salary = 0, Phone = 'Unspecified', Skills = 'Unspecified'
+where CandidateID = 6;
+
+delete from Candidates where CandidateID = 6;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -24,9 +28,7 @@ select * from Candidates where Email='christopherstewartsep@gmail.com' AND Passw
     </last-used-providers>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" object-ref="schemas/joblistingdatabase/tables/candidates" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" dataset="JobListingDatabase.MatchScore" active-filter-id="EMPTY_FILTER" />

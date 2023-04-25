@@ -1,7 +1,14 @@
 import java.sql.*;
 
-public class RetrieveData {
-    public User RetrieveData(int userID){
+public class testingPassingUserData {
+
+    //getting current user's ID from the getter in User class.
+    int currentUserID = User.getCurrentUserID();
+    User user = getAuthenticatedUser(currentUserID);
+
+
+
+    public User getAuthenticatedUser(int userID){
         User user = null;
 
         final String url = "jdbc:mysql://localhost:3306/JobListingDatabase";
@@ -37,5 +44,19 @@ public class RetrieveData {
             e.printStackTrace();
         }
         return user;
+    }
+
+    public static void main(String[] args) {
+        testingPassingUserData testingPassingUserData = new testingPassingUserData();
+        User user = testingPassingUserData.user;
+        System.out.println(user.FirstName + " " + user.LastName);
+        System.out.println(user.Email);
+        System.out.println(user.Password);
+        System.out.println(user.Phone);
+        System.out.println(user.Desired_Salary);
+        System.out.println(user.Location);
+        for(int i = 0; i < user.Skills.length; i++){
+            System.out.println("Job Skills " + (i+1) + ": " + user.Skills[i]);
+        }
     }
 }

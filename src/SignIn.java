@@ -23,15 +23,21 @@ public class SignIn extends JDialog{
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
         signInButton.addActionListener(new ActionListener() {
+
+            //getting the user's email and password from the text fields
             @Override
             public void actionPerformed(ActionEvent e) {
                 String email = textFieldEmail.getText();
                 String password = String.valueOf(passwordField1.getPassword());
 
+                //getting the user from the database
                 user = getAuthenticatedUser(email, password);
 
+                //if the user is not null, then the user is authenticated
                 if(user != null){
                     dispose();
+                    User.setCurrentUserID(user.CandidateID);
+                    HomePageGUI homepage = new HomePageGUI();
                 }
                 else{
                     JOptionPane.showMessageDialog(SignIn.this, "Email or Password Invalid","Try Again", JOptionPane.ERROR_MESSAGE);
@@ -39,6 +45,7 @@ public class SignIn extends JDialog{
             }
         });
 
+        //if the user clicks the sign up button, then the sign up window will open
         signUpButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -48,7 +55,6 @@ public class SignIn extends JDialog{
 
             }
         });
-
         setVisible(true);
 
     }

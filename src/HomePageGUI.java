@@ -3,9 +3,12 @@ import java.awt.*;
 
 public class HomePageGUI extends JFrame {
 
+    int currentUserID = User.getCurrentUserID();
+    User user = User.RetrieveData(currentUserID);
+
     // Constructor
     public HomePageGUI() {
-
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         // Set the title and size of the frame
         setTitle("Tech Job Portal");
         setSize(600, 400);
@@ -32,6 +35,18 @@ public class HomePageGUI extends JFrame {
         menuPanel.add(refreshButton);
         menuPanel.add(createPostingButton);
         menuPanel.add(accountButton);
+
+        accountButton.addActionListener(e -> {
+            System.out.println(user.FirstName + " " + user.LastName);
+            System.out.println(user.Email);
+            System.out.println(user.Password);
+            System.out.println(user.Phone);
+            System.out.println(user.Desired_Salary);
+            System.out.println(user.Location);
+            for(int i = 0; i < user.Skills.length; i++){
+                System.out.println("Job Skills " + (i+1) + ": " + user.Skills[i]);
+            }
+        });
 
         // Add the panels to the frame
         add(welcomePanel, BorderLayout.CENTER);

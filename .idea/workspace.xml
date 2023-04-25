@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="add signIn gui and update signUP">
+    <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="initial Commit">
+      <change afterPath="$PROJECT_DIR$/src/testingPassingUserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePageGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePageGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RetrieveData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RetrieveData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignIn.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignIn.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,14 +27,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="REBASE" />
+      </set>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/SignIn.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/DatabaseConnectionManager.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/User.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/SignIn.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/SignUp.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/User.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -54,7 +67,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HomePageGUI">
+  <component name="RunManager" selected="Application.SignIn">
     <configuration name="HomePageGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HomePageGUI" />
       <module name="TechJobBoard" />
@@ -76,11 +89,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testingPassingUserData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testingPassingUserData" />
+      <module name="TechJobBoard" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HomePageGUI" />
         <item itemvalue="Application.SignIn" />
         <item itemvalue="Application.SignUp" />
+        <item itemvalue="Application.HomePageGUI" />
+        <item itemvalue="Application.testingPassingUserData" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +154,50 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="12" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
+          <line>161</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
+          <line>154</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
+          <line>156</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
+          <line>159</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
+          <line>155</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TechJobBoard$SignIn.ic" NAME="SignIn Coverage Results" MODIFIED="1682440185701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
