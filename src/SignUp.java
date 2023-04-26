@@ -153,7 +153,7 @@ public class SignUp extends JDialog {
                 user.Location = "Unassigned Location";
                 user.Desired_Salary = 0;
                 user.Phone = "Unassigned Phone";
-                user.Skills = new String[7];
+                user.Skills = new String[8];
 
                 String skillString = "";
                 for(int i = 0; i< user.Skills.length; i++){

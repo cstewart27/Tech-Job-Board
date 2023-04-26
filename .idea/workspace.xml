@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="add HomePageGUI and updated button actions in SignIn and SignUp">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="changed amount of skills allowed for account details" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682446093351</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed amount of skills allowed for account details">
+      <created>1682522990584</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682522990584</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,7 +158,8 @@
     <MESSAGE value="add signIn gui and update signUP" />
     <MESSAGE value="pass data from signin and signup to homegui" />
     <MESSAGE value="clean up files and database connections into one file" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up files and database connections into one file" />
+    <MESSAGE value="changed amount of skills allowed for account details" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed amount of skills allowed for account details" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
