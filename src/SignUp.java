@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
+import java.util.Locale;
 
 public class SignUp extends JDialog {
     private JPanel panel1;
@@ -52,7 +53,7 @@ public class SignUp extends JDialog {
     }
 
     private void registerUser() {
-        String email = textFieldEmail.getText();
+        String email = textFieldEmail.getText().toLowerCase();
         String password = passwordField1.getText();
         String passwordConfirm2 = passwordConfirm.getText();
         String firstName = textFieldFirstName.getText();
@@ -152,7 +153,7 @@ public class SignUp extends JDialog {
                 user.Location = "Unassigned Location";
                 user.Desired_Salary = 0;
                 user.Phone = "Unassigned Phone";
-                user.Skills = new String[9];
+                user.Skills = new String[8];
 
                 String skillString = "";
                 for(int i = 0; i< user.Skills.length; i++){

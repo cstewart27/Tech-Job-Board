@@ -46,6 +46,8 @@ public class HomePageGUI extends JFrame {
             for(int i = 0; i < user.Skills.length; i++){
                 System.out.println("Job Skills " + (i+1) + ": " + user.Skills[i]);
             }
+            dispose();
+            AccountDetails accountDetails = new AccountDetails(this);
         });
 
         // Add the panels to the frame
