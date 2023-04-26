@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="changed amount of skills allowed for account details" />
+    <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="changed amount of skills allowed for account details">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePageGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePageGUI.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682522990584</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changed amount of skills allowed for account details">
+      <created>1682523284285</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682523284285</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

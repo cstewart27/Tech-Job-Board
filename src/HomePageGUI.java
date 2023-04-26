@@ -8,7 +8,6 @@ public class HomePageGUI extends JFrame {
 
     // Constructor
     public HomePageGUI() {
-        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         // Set the title and size of the frame
         setTitle("Tech Job Portal");
         setSize(600, 400);
@@ -57,6 +56,9 @@ public class HomePageGUI extends JFrame {
         // Set the background color of the welcome panel
         welcomePanel.setBackground(Color.yellow);
         repaint();
+
+        //note its not DISPOSE_ON_CLOSE, but EXIT_ON_CLOSE since the HomePageGUI is made differently from other GUIs
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         // Set the frame to be visible
         setVisible(true);
     }
