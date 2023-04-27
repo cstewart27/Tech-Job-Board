@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="changed amount of skills allowed for account details">
+      <change afterPath="$PROJECT_DIR$/src/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CompanyAccountDetails.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CompanyAccountDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CompanyHomePageGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CompanySignIn.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CompanySignIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CompanySignUp.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CompanySignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePageGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePageGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignIn.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignIn.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUp.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUp.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +40,17 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/DatabaseConnectionManager.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/SignIn.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/SignUp.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/SignIn.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/DatabaseConnectionManager.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/User.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -51,6 +68,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -60,16 +80,30 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SignIn">
-    <configuration name="HomePageGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HomePageGUI" />
+  <component name="RunManager" selected="Application.CompanySignIn">
+    <configuration name="CompanyAccountDetails" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CompanyAccountDetails" />
       <module name="TechJobBoard" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignIn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SignIn" />
+    <configuration name="CompanyHomePageGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CompanyHomePageGUI" />
+      <module name="TechJobBoard" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanySignIn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CompanySignIn" />
+      <module name="TechJobBoard" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanySignUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CompanySignUp" />
       <module name="TechJobBoard" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,19 +116,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testingPassingUserData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testingPassingUserData" />
-      <module name="TechJobBoard" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SignIn" />
+        <item itemvalue="Application.CompanySignIn" />
+        <item itemvalue="Application.CompanyHomePageGUI" />
+        <item itemvalue="Application.CompanyAccountDetails" />
+        <item itemvalue="Application.CompanySignUp" />
         <item itemvalue="Application.SignUp" />
-        <item itemvalue="Application.HomePageGUI" />
-        <item itemvalue="Application.testingPassingUserData" />
       </list>
     </recent_temporary>
   </component>
@@ -180,42 +208,42 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>172</line>
+          <line>182</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>165</line>
+          <line>175</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>167</line>
+          <line>177</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>168</line>
+          <line>178</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>170</line>
+          <line>180</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>171</line>
+          <line>181</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>169</line>
+          <line>179</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>166</line>
+          <line>176</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>

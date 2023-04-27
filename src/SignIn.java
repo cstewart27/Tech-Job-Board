@@ -10,7 +10,9 @@ public class SignIn extends JDialog{
     private JButton signUpButton;
     private JTextField textFieldEmail;
     private JPanel loginPanel;
+    private JButton companySignInButton;
 
+    public User user;
 
 
     public SignIn(JFrame parent){
@@ -55,11 +57,19 @@ public class SignIn extends JDialog{
 
             }
         });
+
+        companySignInButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                CompanySignIn companySignIn = new CompanySignIn(null);
+            }
+        });
         setVisible(true);
 
     }
 
-    public User user;
+
     private User getAuthenticatedUser(String email, String password){
         User user = null;
 
