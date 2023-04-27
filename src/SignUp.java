@@ -3,7 +3,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
-import java.util.Locale;
 
 public class SignUp extends JDialog {
     private JPanel panel1;
@@ -14,6 +13,7 @@ public class SignUp extends JDialog {
     private JTextField textFieldLastName;
     private JButton registerButton;
     private JButton signInButton;
+    private JButton registerAsCompanyButton;
 
     //initialize the user object will occur in addUsertoDatabase method
     public User user;
@@ -44,6 +44,16 @@ public class SignUp extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 SignIn signIn = new SignIn(null);
+
+            }
+        });
+
+        //if the user clicks the register as company button, then the register as company window will open
+        registerAsCompanyButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                CompanySignUp companySign = new CompanySignUp(null);
 
             }
         });
