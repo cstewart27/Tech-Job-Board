@@ -24,6 +24,7 @@ public class HomePageGUI extends JFrame {
         c.anchor = GridBagConstraints.CENTER;
         welcomePanel.add(welcomeLabel, c);
 
+
         // Create a panel for the menu bar and buttons
         JPanel menuPanel = new JPanel(new GridLayout(1, 3));
         JButton logOutButton = new JButton("Log Out");
@@ -50,7 +51,7 @@ public class HomePageGUI extends JFrame {
                 System.out.println("Job Skills " + (i+1) + ": " + user.Skills[i]);
             }
             dispose();
-            AccountDetails accountDetails = new AccountDetails(this);
+            AccountDetails accountDetails = new AccountDetails(null);
         });
 
         // Add the panels to the frame

@@ -10,7 +10,7 @@ public class User {
     public String Phone;
     public int Desired_Salary;
     public String Location;
-    public String [] Skills;
+    public String [] Skills = new String[8];
 
 
     public static User RetrieveData(int userID){
@@ -34,7 +34,17 @@ public class User {
                 user.Phone = resultSet.getString("Phone");
                 user.Desired_Salary = resultSet.getInt("Desired_Salary");
                 user.Location = resultSet.getString("Location");
-                user.Skills = resultSet.getString("Skills").split(","); //split the skills into an array
+                String [] tempArray = resultSet.getString("Skills").split(","); //split the skills into an array
+
+                for(int i = 0; i < tempArray.length; i++){
+                    user.Skills[i] = tempArray[i];
+                }
+                for(int i = 0; i< user.Skills.length; i++){
+                    if(user.Skills[i] == null){
+                        user.Skills[i] = "Empty";
+                    }
+                }
+
             }
             resultSet.close();
             stmt.close();
