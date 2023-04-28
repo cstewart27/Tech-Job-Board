@@ -29,8 +29,8 @@ public class SignIn extends JDialog{
             //getting the user's email and password from the text fields
             @Override
             public void actionPerformed(ActionEvent e) {
-                String email = textFieldEmail.getText();
-                String password = String.valueOf(passwordField1.getPassword());
+                String email = textFieldEmail.getText().toLowerCase().trim();
+                String password = String.valueOf(passwordField1.getPassword()).trim();
 
                 //getting the user from the database
                 user = getAuthenticatedUser(email, password);
@@ -86,13 +86,13 @@ public class SignIn extends JDialog{
             if(resultSet.next()){
                 user = new User();
                 user.CandidateID = resultSet.getInt("CandidateID");
-                user.FirstName = resultSet.getString("FirstName");
-                user.LastName = resultSet.getString("LastName");
-                user.Email = resultSet.getString("Email");
-                user.Password = resultSet.getString("Password");
-                user.Phone = resultSet.getString("Phone");
+                user.FirstName = resultSet.getString("FirstName").trim();
+                user.LastName = resultSet.getString("LastName").trim();
+                user.Email = resultSet.getString("Email").trim();
+                user.Password = resultSet.getString("Password").trim();
+                user.Phone = resultSet.getString("Phone").trim();
                 user.Desired_Salary = resultSet.getInt("Desired_Salary");
-                user.Location = resultSet.getString("Location");
+                user.Location = resultSet.getString("Location").trim();
             }
 
             stmt.close();

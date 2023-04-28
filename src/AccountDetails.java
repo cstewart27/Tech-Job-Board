@@ -72,23 +72,23 @@ public class AccountDetails extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //update the user's desired salary
-                user.Desired_Salary = Integer.parseInt(defaultDesiredSalaryTextField.getText());
+                user.Desired_Salary = Integer.parseInt(defaultDesiredSalaryTextField.getText().trim());
 
                 //update the user's job location
-                user.Location = defaultJobLocationTextField.getText();
+                user.Location = defaultJobLocationTextField.getText().trim();
 
                 //update the user's skills
-                user.Skills[0] = skill0TextField.getText();
-                user.Skills[1] = skill1TextField.getText();
-                user.Skills[2] = skill2TextField.getText();
-                user.Skills[3] = skill3TextField.getText();
-                user.Skills[4] = skill4TextField.getText();
-                user.Skills[5] = skill5TextField.getText();
-                user.Skills[6] = skill6TextField.getText();
-                user.Skills[7] = skill7TextField.getText();
+                user.Skills[0] = skill0TextField.getText().trim();
+                user.Skills[1] = skill1TextField.getText().trim();
+                user.Skills[2] = skill2TextField.getText().trim();
+                user.Skills[3] = skill3TextField.getText().trim();
+                user.Skills[4] = skill4TextField.getText().trim();
+                user.Skills[5] = skill5TextField.getText().trim();
+                user.Skills[6] = skill6TextField.getText().trim();
+                user.Skills[7] = skill7TextField.getText().trim();
 
                 //update the user's phone number
-                user.Phone = defaultPhoneNumberTextField.getText();
+                user.Phone = defaultPhoneNumberTextField.getText().trim();
 
                 //update the user's information in the database
                 UpdateData(user);

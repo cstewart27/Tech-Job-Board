@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
+import java.util.Locale;
 
 public class CompanySignUp extends JDialog{
     private JTextField companyNameTextField;
@@ -61,10 +62,10 @@ public class CompanySignUp extends JDialog{
     }
 
     private void registerCompany() {
-        String email = companyEmailAddress.getText();
-        String password = passwordTextField.getText();
-        String confirmPassword = confirmPasswordTextField.getText();
-        String companyName = companyNameTextField.getText();
+        String email = companyEmailAddress.getText().toLowerCase().trim();
+        String password = passwordTextField.getText().trim();
+        String confirmPassword = confirmPasswordTextField.getText().trim();
+        String companyName = companyNameTextField.getText().trim();
 
 
         if(email.equals("") || password.equals("") || confirmPassword.equals("") || companyName.equals("")){

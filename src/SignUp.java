@@ -63,11 +63,11 @@ public class SignUp extends JDialog {
     }
 
     private void registerUser() {
-        String email = textFieldEmail.getText().toLowerCase();
-        String password = passwordField1.getText();
-        String passwordConfirm2 = passwordConfirm.getText();
-        String firstName = textFieldFirstName.getText();
-        String lastName = textFieldLastName.getText();
+        String email = textFieldEmail.getText().toLowerCase().trim();
+        String password = passwordField1.getText().trim();
+        String passwordConfirm2 = passwordConfirm.getText().trim();
+        String firstName = textFieldFirstName.getText().trim();
+        String lastName = textFieldLastName.getText().trim();
 
         //if any of the fields are empty, then display error message
         if (email.equals("") || password.equals("") || passwordConfirm2.equals("") || firstName.equals("") || lastName.equals("")) {
