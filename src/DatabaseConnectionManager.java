@@ -10,7 +10,7 @@ public class DatabaseConnectionManager {
         conn = DriverManager.getConnection(url, user, password);
     }
 
-    public static Connection getConnection() {
+    public static Connection getConnection(String url, String usernameToDatabase, String passwordToDatabase) {
         return conn;
     }
 

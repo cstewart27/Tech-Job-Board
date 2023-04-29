@@ -53,9 +53,9 @@ public class CompanyAccountDetails extends JDialog{
             @Override
             public void actionPerformed(ActionEvent e) {
                 //update the company's information
-                company.Phone = defaultPhoneNumberTextField.getText();
-                company.Location = defaultCompanyLocationTextField.getText();
-                company.Description = defaultCompanyDescriptionTextField.getText();
+                company.Phone = defaultPhoneNumberTextField.getText().trim();
+                company.Location = defaultCompanyLocationTextField.getText().trim();
+                company.Description = defaultCompanyDescriptionTextField.getText().trim();
 
                 UpdateData(company);
 
@@ -67,9 +67,9 @@ public class CompanyAccountDetails extends JDialog{
 
     public Company UpdateData(Company company){
         //update the company's information
-        company.Phone = defaultPhoneNumberTextField.getText();
-        company.Location = defaultCompanyLocationTextField.getText();
-        company.Description = defaultCompanyDescriptionTextField.getText();
+        company.Phone = defaultPhoneNumberTextField.getText().trim();
+        company.Location = defaultCompanyLocationTextField.getText().trim();
+        company.Description = defaultCompanyDescriptionTextField.getText().trim();
 
         try{
             Connection conn = DriverManager.getConnection(DatabaseConnectionManager.url, DatabaseConnectionManager.usernameToDatabase, DatabaseConnectionManager.passwordToDatabase);

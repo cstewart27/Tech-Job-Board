@@ -26,13 +26,21 @@ public class CompanyHomePageGUI extends JFrame {
         welcomePanel.add(welcomeLabel, c);
 
         // Create a panel for the menu bar and buttons
-        JPanel menuPanel = new JPanel(new GridLayout(1, 3));
+        JPanel menuPanel = new JPanel(new GridLayout(1, 4));
+        JButton logOutButton = new JButton("Log Out");
         JButton jobListingButton = new JButton("Your Job Listings");
         JButton createPostingButton = new JButton("Create Job Posting");
         JButton accountButton = new JButton("Account");
+        menuPanel.add(logOutButton);
         menuPanel.add(jobListingButton);
         menuPanel.add(createPostingButton);
         menuPanel.add(accountButton);
+
+        logOutButton.addActionListener(e -> {
+            Company.setCurrentCompanyID(1);
+            dispose();
+            CompanySignIn companySignIn = new CompanySignIn(null);
+        });
 
         accountButton.addActionListener(e -> {
 

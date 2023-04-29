@@ -24,16 +24,21 @@ public class HomePageGUI extends JFrame {
         c.anchor = GridBagConstraints.CENTER;
         welcomePanel.add(welcomeLabel, c);
 
+
         // Create a panel for the menu bar and buttons
-        JPanel menuPanel = new JPanel(new GridLayout(1, 4));
-        JButton jobListingButton = new JButton("Your Job Listing");
+        JPanel menuPanel = new JPanel(new GridLayout(1, 3));
+        JButton logOutButton = new JButton("Log Out");
         JButton refreshButton = new JButton("Refresh Feed");
-        JButton createPostingButton = new JButton("Create Job Posting");
         JButton accountButton = new JButton("Account");
-        menuPanel.add(jobListingButton);
+        menuPanel.add(logOutButton);
         menuPanel.add(refreshButton);
-        menuPanel.add(createPostingButton);
         menuPanel.add(accountButton);
+
+        logOutButton.addActionListener(e -> {
+            User.setCurrentUserID(1);
+            dispose();
+            SignIn signIn = new SignIn(null);
+        });
 
         accountButton.addActionListener(e -> {
             System.out.println(user.FirstName + " " + user.LastName);
@@ -46,7 +51,7 @@ public class HomePageGUI extends JFrame {
                 System.out.println("Job Skills " + (i+1) + ": " + user.Skills[i]);
             }
             dispose();
-            AccountDetails accountDetails = new AccountDetails(this);
+            AccountDetails accountDetails = new AccountDetails(null);
         });
 
         // Add the panels to the frame

@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
+import java.util.Locale;
 
 public class CompanySignIn extends JDialog{
     private JTextField textFieldEmail;
@@ -26,8 +27,8 @@ public class CompanySignIn extends JDialog{
         signInButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String email = textFieldEmail.getText();
-                String password = String.valueOf(passwordTextField.getPassword());
+                String email = textFieldEmail.getText().toLowerCase().trim();
+                String password = String.valueOf(passwordTextField.getPassword()).trim();
 
                 //getting the user from the database
                 Company company = getAuthenticatedCompany(email, password);
@@ -75,12 +76,12 @@ public class CompanySignIn extends JDialog{
             if(rs.next()){
                 company = new Company();
                 company.CompanyID = rs.getInt("CompanyID");
-                company.Name = rs.getString("Name");
-                company.Phone = rs.getString("Phone");
-                company.Email = rs.getString("Email");
-                company.Password = rs.getString("Password");
-                company.Location = rs.getString("Location");
-                company.Description = rs.getString("Description");
+                company.Name = rs.getString("Name").trim();
+                company.Phone = rs.getString("Phone").trim();
+                company.Email = rs.getString("Email").trim();
+                company.Password = rs.getString("Password").trim();
+                company.Location = rs.getString("Location").trim();
+                company.Description = rs.getString("Description").trim();
             }
 
             stmt.close();
