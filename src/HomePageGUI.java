@@ -16,7 +16,7 @@ public class HomePageGUI extends JFrame {
         JPanel welcomePanel = new JPanel(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
         JLabel welcomeLabel = new JLabel("Welcome to Tech Job Portal");
-        welcomeLabel.setFont(new Font("Arial", Font.BOLD, 30));
+        welcomeLabel.setFont(new Font("Arial", Font.BOLD,30));
         c.gridx = 0;
         c.gridy = 0;
         c.weightx = 1;
@@ -54,7 +54,7 @@ public class HomePageGUI extends JFrame {
         add(menuPanel, BorderLayout.NORTH);
 
         // Set the background color of the welcome panel
-        welcomePanel.setBackground(Color.yellow);
+        welcomePanel.setBackground(Color.BLACK);
         repaint();
 
         //note its not DISPOSE_ON_CLOSE, but EXIT_ON_CLOSE since the HomePageGUI is made differently from other GUIs
@@ -67,5 +67,6 @@ public class HomePageGUI extends JFrame {
     public static void main(String[] args) {
 
         HomePageGUI homepage = new HomePageGUI();
+
     }
 }
