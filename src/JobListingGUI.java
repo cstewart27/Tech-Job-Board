@@ -24,8 +24,7 @@ public class JobListingGUI extends JDialog{
     private JLabel defaultSkill5;
     private JLabel defaultSkill6;
     private JLabel defaultSkill7;
-
-
+    private JButton deleteJobListingButton;
 
 
     public JobListingGUI(JFrame parent, int JobListingID) {
@@ -76,12 +75,58 @@ public class JobListingGUI extends JDialog{
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dispose();
-                HomePageGUI2 homePageGUI = new HomePageGUI2(null);
+
+                //goes to user homepage
+                if(Company.getCurrentCompanyID() == 1 && User.getCurrentUserID() > 1){
+                    dispose();
+                    HomePageGUI2 homePageGUI = new HomePageGUI2(null);
+                }
+                if(User.getCurrentUserID() == 1 && Company.getCurrentCompanyID() > 1){
+                    dispose();
+                    CompanyHomePageGUI companyHomePageGUI = new CompanyHomePageGUI();
+                }
+            }
+        });
+
+        deleteJobListingButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                if(Company.getCurrentCompanyID() == jobListing.companyID && Company.getCurrentCompanyID() != 1){
+                    dispose();
+                    deleteJobListing(jobListing.jobListingID);
+                }
+                else{
+                    JOptionPane.showMessageDialog(null, "You do not have permission to delete this job listing.");
+                }
+
             }
         });
 
         setVisible(true);
+
+    }
+
+    public static void deleteJobListing(int currentJobListingID){
+        try{
+            Connection conn = DriverManager.getConnection(DatabaseConnectionManager.url, DatabaseConnectionManager.usernameToDatabase, DatabaseConnectionManager.passwordToDatabase);
+            Statement stmt = conn.createStatement();
+            PreparedStatement preparedStatement = conn.prepareStatement("DELETE FROM JobListing WHERE JobListingID = ?");
+            preparedStatement.setInt(1, currentJobListingID);
+            preparedStatement.executeUpdate();
+            stmt.close();
+            conn.close();
+        }
+        catch (Exception e){
+            System.out.println("Error: " + e);
+        }
+
+        if(Company.getCurrentCompanyID() == 1 && User.getCurrentUserID() > 1){
+            HomePageGUI2 homePageGUI = new HomePageGUI2(null);
+        }
+        if(User.getCurrentUserID() == 1 && Company.getCurrentCompanyID() > 1){
+            CompanyHomePageGUI companyHomePageGUI = new CompanyHomePageGUI();
+        }
     }
     public static void main(String[] args) {
         JobListingGUI jobListingGUI = new JobListingGUI(null, 1);
