@@ -3,6 +3,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class AccountDetails extends JDialog {
 
@@ -91,6 +93,11 @@ public class AccountDetails extends JDialog {
                 //update the user's phone number
                 user.Phone = defaultPhoneNumberTextField.getText().trim();
 
+                //validate phone number
+                if(!validatePhoneNumber(user.Phone)){
+                    JOptionPane.showMessageDialog(null, "Invalid phone number");
+                    return;
+                }
                 //update the user's information in the database
                 UpdateData(user);
 
@@ -108,6 +115,15 @@ public class AccountDetails extends JDialog {
         setVisible(true);
 
 
+    }
+
+    //validates the user's phone number
+    public boolean validatePhoneNumber(String phoneNumber){
+
+        String PHONE_REGEX = "^\\(?([2-9][0-8][0-9])\\)?[-.●]?([2-9][0-9]{2})[-.●]?([0-9]{4})$";
+        Pattern pattern = Pattern.compile(PHONE_REGEX);
+        Matcher matcher = pattern.matcher(phoneNumber);
+        return matcher.matches();
     }
 
     public User UpdateData(User user) {

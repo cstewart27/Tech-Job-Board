@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="add CreateJobListing and update CompanyHomePageGUI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompanySignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanySignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompanyAccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanyAccountDetails.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

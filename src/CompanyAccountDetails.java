@@ -6,6 +6,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class CompanyAccountDetails extends JDialog{
 
@@ -57,7 +59,11 @@ public class CompanyAccountDetails extends JDialog{
                 company.Phone = defaultPhoneNumberTextField.getText().trim();
                 company.Location = defaultCompanyLocationTextField.getText().trim();
                 company.Description = defaultCompanyDescriptionTextField.getText().trim();
-
+                //validate phone number
+                if(!validatePhoneNumber(company.Phone)){
+                    JOptionPane.showMessageDialog(null, "Invalid phone number");
+                    return;
+                }
                 UpdateData(company);
 
             }
@@ -105,6 +111,14 @@ public class CompanyAccountDetails extends JDialog{
         return company;
     }
 
+    //validates the user's phone number
+    public boolean validatePhoneNumber(String phoneNumber){
+
+        String PHONE_REGEX = "^\\(?([2-9][0-8][0-9])\\)?[-.●]?([2-9][0-9]{2})[-.●]?([0-9]{4})$";
+        Pattern pattern = Pattern.compile(PHONE_REGEX);
+        Matcher matcher = pattern.matcher(phoneNumber);
+        return matcher.matches();
+    }
     public static void main(String[] args) {
         CompanyAccountDetails CompanyAccountDetails = new CompanyAccountDetails(null);
     }
