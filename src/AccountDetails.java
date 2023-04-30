@@ -25,6 +25,7 @@ public class AccountDetails extends JDialog {
     private JPanel panel1;
     private JTextField defaultPhoneNumberTextField;
     private JLabel emailLabel;
+    private JButton deleteAccountButton;
 
     public AccountDetails(JFrame parent) {
 
@@ -65,7 +66,7 @@ public class AccountDetails extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose();
-                HomePageGUI homePageGUI = new HomePageGUI();
+                HomePageGUI2 homePageGUI = new HomePageGUI2(null);
             }
         });
         updateAccountDetailsButton.addActionListener(new ActionListener() {
@@ -96,7 +97,16 @@ public class AccountDetails extends JDialog {
             }
         });
 
+        deleteAccountButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                User.deleteAccount(User.getCurrentUserID());
+            }
+        });
+
         setVisible(true);
+
 
     }
 

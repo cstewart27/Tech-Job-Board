@@ -51,4 +51,23 @@ public class Company {
     public static int setCurrentCompanyID(int companyID) {
         return Company.currentCompanyID = companyID;
     }
+
+    public static void deleteAccount(int currentCompanyID){
+        try{
+            Connection conn = DriverManager.getConnection(DatabaseConnectionManager.url, DatabaseConnectionManager.usernameToDatabase, DatabaseConnectionManager.passwordToDatabase);
+            Statement stmt = conn.createStatement();
+            String sql = "delete from Companies where CompanyID=?";
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setInt(1, currentCompanyID);
+            preparedStatement.executeUpdate();
+            stmt.close();
+            conn.close();
+
+
+            CompanySignIn companySignIn = new CompanySignIn(null);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }

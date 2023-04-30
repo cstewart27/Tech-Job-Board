@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
+import java.util.regex.Pattern;
 
 public class SignUp extends JDialog {
     private JPanel panel1;
@@ -24,7 +25,7 @@ public class SignUp extends JDialog {
         super(parent);
         setTitle("Sign Up");
         setContentPane(panel1);
-        setMinimumSize(new Dimension(1440,1024));
+        setMinimumSize(new Dimension(600,400));
         setModal(true);
         setLocationRelativeTo(parent);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -68,6 +69,12 @@ public class SignUp extends JDialog {
         String passwordConfirm2 = passwordConfirm.getText().trim();
         String firstName = textFieldFirstName.getText().trim();
         String lastName = textFieldLastName.getText().trim();
+
+        //check if the email is valid
+        if (!isValidEmail(email)) {
+            JOptionPane.showMessageDialog(null, "Please enter a valid email");
+            return;
+        }
 
         //if any of the fields are empty, then display error message
         if (email.equals("") || password.equals("") || passwordConfirm2.equals("") || firstName.equals("") || lastName.equals("")) {
@@ -116,7 +123,7 @@ public class SignUp extends JDialog {
 
                     dispose();
                     User.setCurrentUserID(user.CandidateID);
-                    HomePageGUI homepage = new HomePageGUI();
+                    HomePageGUI2 homepage = new HomePageGUI2(null);
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
@@ -128,7 +135,11 @@ public class SignUp extends JDialog {
         }
 
     }
-
+    private boolean isValidEmail(String email) {
+        String emailRegex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
+        Pattern pattern = Pattern.compile(emailRegex);
+        return pattern.matcher(email).matches();
+    }
 
     private User addUsertoDatabase(int id, String FirstName, String LastName, String email, String password) {
         //add user to database

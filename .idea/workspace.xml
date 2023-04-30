@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="add log out buttons in both GUI company and user">
-      <change afterPath="$PROJECT_DIR$/src/JobListingGUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JobListingGUI.java" afterDir="false" />
+    <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="add CreateJobListing and update CompanyHomePageGUI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatabaseConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseConnectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePageGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePageGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JobListing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JobListing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompanySignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanySignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,19 +21,7 @@
       </list>
     </option>
   </component>
-  <component name="Git.Pull.Settings">
-    <option name="OPTIONS">
-      <set>
-        <option value="REBASE" />
-      </set>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -49,10 +33,14 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/CompanyHomePageGUI.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/JobListingGUI.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/DatabaseConnectionManager.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/JobListing.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/SignIn.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/SignUp.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/User.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AccountDetails.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -66,9 +54,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-j-8.0.32.jar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -81,9 +72,9 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JobListingGUI">
-    <configuration name="AccountDetails" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AccountDetails" />
+  <component name="RunManager" selected="Application.CompanySignIn">
+    <configuration name="CompanyHomePageGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CompanyHomePageGUI" />
       <module name="TechJobBoard" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,15 +94,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobListingGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JobListingGUI" />
+    <configuration name="HomePageGUI2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HomePageGUI2" />
       <module name="TechJobBoard" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignIn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SignIn" />
+    <configuration name="SignUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SignUp" />
       <module name="TechJobBoard" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JobListingGUI" />
-        <item itemvalue="Application.HomePageGUI" />
-        <item itemvalue="Application.AccountDetails" />
-        <item itemvalue="Application.SignIn" />
         <item itemvalue="Application.CompanySignIn" />
+        <item itemvalue="Application.SignUp" />
+        <item itemvalue="Application.CompanyHomePageGUI" />
+        <item itemvalue="Application.HomePageGUI2" />
+        <item itemvalue="Application.HomePageGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -143,56 +134,35 @@
       <option name="project" value="LOCAL" />
       <updated>1682134534265</updated>
     </task>
-    <task id="LOCAL-00002" summary="add signIn gui and update signUP">
-      <created>1682272185790</created>
+    <task id="LOCAL-00002" summary="initial Commit">
+      <created>1682768346461</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1682272185790</updated>
+      <updated>1682768346461</updated>
     </task>
-    <task id="LOCAL-00003" summary="pass data from signin and signup to homegui">
-      <created>1682442995480</created>
+    <task id="LOCAL-00003" summary="initial Commit">
+      <created>1682833745553</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1682442995480</updated>
+      <updated>1682833745553</updated>
     </task>
-    <task id="LOCAL-00004" summary="clean up files and database connections into one file">
-      <created>1682446093351</created>
+    <task id="LOCAL-00004" summary="delete match and add delete account from company and user">
+      <created>1682881472562</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1682446093351</updated>
+      <updated>1682881472562</updated>
     </task>
-    <task id="LOCAL-00005" summary="changed amount of skills allowed for account details">
-      <created>1682522990584</created>
+    <task id="LOCAL-00005" summary="add CreateJobListing and update CompanyHomePageGUI">
+      <created>1682891053228</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1682522990584</updated>
+      <updated>1682891053228</updated>
     </task>
-    <task id="LOCAL-00006" summary="changed amount of skills allowed for account details">
-      <created>1682523284285</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1682523284285</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add company sign in, sign up, homepage, and account details">
-      <created>1682560526538</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1682560526538</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add log out buttons in both GUI company and user">
-      <created>1682643619198</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1682643619198</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,21 +170,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial Commit" />
-    <MESSAGE value="add signIn gui and update signUP" />
-    <MESSAGE value="pass data from signin and signup to homegui" />
-    <MESSAGE value="clean up files and database connections into one file" />
-    <MESSAGE value="changed amount of skills allowed for account details" />
-    <MESSAGE value="add company sign in, sign up, homepage, and account details" />
-    <MESSAGE value="add log out buttons in both GUI company and user" />
-    <option name="LAST_COMMIT_MESSAGE" value="add log out buttons in both GUI company and user" />
+    <MESSAGE value="delete match and add delete account from company and user" />
+    <MESSAGE value="add CreateJobListing and update CompanyHomePageGUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="add CreateJobListing and update CompanyHomePageGUI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -223,75 +196,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="12" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>182</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>175</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>177</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>178</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>180</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>181</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>179</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SignUp.java</url>
-          <line>176</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/JobListingGUI.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/JobListingGUI.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/JobListingGUI.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/JobListingGUI.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/JobListingGUI.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TechJobBoard$SignIn.ic" NAME="SignIn Coverage Results" MODIFIED="1682440185701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Tech_Job_Board$SignIn.ic" NAME="SignIn Coverage Results" MODIFIED="1682347800262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
