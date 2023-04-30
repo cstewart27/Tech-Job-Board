@@ -23,7 +23,7 @@ public class CompanySignUp extends JDialog{
         super(parent);
         setTitle("Company Sign Up");
         setContentPane(panel1);
-        setMinimumSize(new Dimension(1440,1024));
+        setMinimumSize(new Dimension(600,400));
         setModal(true);
         setLocationRelativeTo(parent);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);

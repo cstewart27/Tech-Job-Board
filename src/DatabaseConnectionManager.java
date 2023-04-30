@@ -1,7 +1,7 @@
 import java.sql.*;
 
 public class DatabaseConnectionManager {
-    public static final String url = "jdbc:mysql://localhost:3306/JobListingDatabase";
+    public static final String url = "jdbc:mysql80://localhost:3306/JobListingDatabase";
     public static final String usernameToDatabase = "root";
     public static final String passwordToDatabase = "1723";
     private static Connection conn;
