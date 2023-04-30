@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 import java.util.Locale;
+import java.util.regex.Pattern;
 
 public class CompanySignUp extends JDialog{
     private JTextField companyNameTextField;
@@ -67,6 +68,11 @@ public class CompanySignUp extends JDialog{
         String confirmPassword = confirmPasswordTextField.getText().trim();
         String companyName = companyNameTextField.getText().trim();
 
+        //check email format
+        if (!isValidEmail(email)) {
+            JOptionPane.showMessageDialog(null, "Please enter a valid email");
+            return;
+        }
 
         if(email.equals("") || password.equals("") || confirmPassword.equals("") || companyName.equals("")){
             JOptionPane.showMessageDialog(null, "Please fill out all fields");
@@ -113,7 +119,7 @@ public class CompanySignUp extends JDialog{
 
                     dispose();
                     Company.setCurrentCompanyID(company.CompanyID);
-                    //CompanyHomePageGUI companyHomePageGUI = new CompanyHomePageGUI(null);
+                    CompanyHomePageGUI companyHomePageGUI = new CompanyHomePageGUI();
                 }
                 catch (SQLException e){
                     throw new RuntimeException(e);
@@ -174,6 +180,12 @@ public class CompanySignUp extends JDialog{
         }
         return company;
 
+    }
+
+    private boolean isValidEmail(String email) {
+        String emailRegex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
+        Pattern pattern = Pattern.compile(emailRegex);
+        return pattern.matcher(email).matches();
     }
 
     public static void main(String[] args) {

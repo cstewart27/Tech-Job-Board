@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
+import java.util.regex.Pattern;
 
 public class SignUp extends JDialog {
     private JPanel panel1;
@@ -69,6 +70,12 @@ public class SignUp extends JDialog {
         String firstName = textFieldFirstName.getText().trim();
         String lastName = textFieldLastName.getText().trim();
 
+        //check if the email is valid
+        if (!isValidEmail(email)) {
+            JOptionPane.showMessageDialog(null, "Please enter a valid email");
+            return;
+        }
+
         //if any of the fields are empty, then display error message
         if (email.equals("") || password.equals("") || passwordConfirm2.equals("") || firstName.equals("") || lastName.equals("")) {
             JOptionPane.showMessageDialog(null, "Please fill in all fields");
@@ -128,7 +135,11 @@ public class SignUp extends JDialog {
         }
 
     }
-
+    private boolean isValidEmail(String email) {
+        String emailRegex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
+        Pattern pattern = Pattern.compile(emailRegex);
+        return pattern.matcher(email).matches();
+    }
 
     private User addUsertoDatabase(int id, String FirstName, String LastName, String email, String password) {
         //add user to database

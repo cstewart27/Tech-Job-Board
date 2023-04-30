@@ -28,13 +28,16 @@ delete from Candidates where CandidateID = 6;]]></console>
     </last-used-providers>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" object-ref="schemas/joblistingdatabase/tables/companies" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" dataset="JobListingDatabase.MatchScore" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" dataset="joblistingdatabase.joblisting" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" dataset="JobListingDatabase.Candidates" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" dataset="JobListingDatabase.JobListing" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" dataset="joblistingdatabase.companies" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" dataset="joblistingdatabase.candidates" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
