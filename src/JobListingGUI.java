@@ -28,7 +28,7 @@ public class JobListingGUI extends JDialog{
 
 
 
-    public JobListingGUI(JFrame parent) {
+    public JobListingGUI(JFrame parent, int JobListingID) {
         super(parent);
         setTitle("Account Details");
         setContentPane(panel1);
@@ -77,14 +77,14 @@ public class JobListingGUI extends JDialog{
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose();
-                HomePageGUI homePageGUI = new HomePageGUI();
+                HomePageGUI2 homePageGUI = new HomePageGUI2(null);
             }
         });
 
         setVisible(true);
     }
     public static void main(String[] args) {
-        JobListingGUI jobListingGUI = new JobListingGUI(null);
+        JobListingGUI jobListingGUI = new JobListingGUI(null, 1);
 
 
     }

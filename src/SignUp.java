@@ -116,7 +116,7 @@ public class SignUp extends JDialog {
 
                     dispose();
                     User.setCurrentUserID(user.CandidateID);
-                    HomePageGUI homepage = new HomePageGUI();
+                    HomePageGUI2 homepage = new HomePageGUI2(null);
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }

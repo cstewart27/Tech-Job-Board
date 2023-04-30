@@ -64,4 +64,22 @@ public class User {
         return User.currentUserID = userID;
     }
 
+    public static void deleteAccount(int currentUserID){
+        try{
+            Connection conn = DriverManager.getConnection(DatabaseConnectionManager.url, DatabaseConnectionManager.usernameToDatabase, DatabaseConnectionManager.passwordToDatabase);
+            Statement stmt = conn.createStatement();
+            String sql = "delete from Candidates where CandidateID=?";
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setInt(1, currentUserID);
+            preparedStatement.executeUpdate();
+            stmt.close();
+            conn.close();
+
+
+            SignIn signIn = new SignIn(null);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }

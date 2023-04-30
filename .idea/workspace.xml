@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/jobs-png-image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jobs-png-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomePageGUI2.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomePageGUI2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechJobBoard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TechJobBoard.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountDetails.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountDetails.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Company.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CompanyAccountDetails.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanyAccountDetails.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompanySignIn.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanySignIn.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompanySignUp.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanySignUp.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompanySignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanySignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JobListingGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/JobListingGUI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SignIn.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignIn.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompanyAccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanyAccountDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatabaseConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePageGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JobListingGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JobListingGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JobMatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +37,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/CompanyHomePageGUI.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/JobListingGUI.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/DatabaseConnectionManager.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/JobListing.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/SignIn.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/SignUp.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/User.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AccountDetails.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -45,9 +70,9 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../mysql-connector-j-8.0.33.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-j-8.0.32.jar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -60,23 +85,9 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CompanySignUp">
+  <component name="RunManager" selected="Application.SignUp">
     <configuration name="CompanyHomePageGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CompanyHomePageGUI" />
-      <module name="TechJobBoard" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CompanySignIn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CompanySignIn" />
-      <module name="TechJobBoard" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CompanySignUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CompanySignUp" />
       <module name="TechJobBoard" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,6 +100,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HomePageGUI2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HomePageGUI2" />
+      <module name="TechJobBoard" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JobListingGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JobListingGUI" />
       <module name="TechJobBoard" />
@@ -96,13 +114,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SignUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SignUp" />
+      <module name="TechJobBoard" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CompanySignUp" />
-        <item itemvalue="Application.JobListingGUI" />
+        <item itemvalue="Application.SignUp" />
+        <item itemvalue="Application.HomePageGUI2" />
         <item itemvalue="Application.CompanyHomePageGUI" />
-        <item itemvalue="Application.CompanySignIn" />
         <item itemvalue="Application.HomePageGUI" />
+        <item itemvalue="Application.JobListingGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +180,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -169,28 +193,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="12" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/HomePageGUI.java</url>
-          <line>79</line>
-          <properties class="HomePageGUI">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/HomePageGUI.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/HomePageGUI.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TechJobBoard$SignIn.ic" NAME="SignIn Coverage Results" MODIFIED="1682440185701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Tech_Job_Board$SignIn.ic" NAME="SignIn Coverage Results" MODIFIED="1682347800262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -7,10 +7,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/mysql-connector-j-8.0.33.jar!/" />
+          <root url="jar://$MODULE_DIR$/mysql-connector-j-8.0.32.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

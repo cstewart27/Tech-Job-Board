@@ -19,6 +19,7 @@ public class CompanyAccountDetails extends JDialog{
     private JButton backButton;
     private JTextField defaultPhoneNumberTextField;
     private JTextField defaultCompanyLocationTextField;
+    private JButton deleteAccountButton;
 
     public CompanyAccountDetails(JFrame parent){
         super(parent);
@@ -62,7 +63,16 @@ public class CompanyAccountDetails extends JDialog{
             }
         });
 
+        deleteAccountButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                Company.deleteAccount(Company.getCurrentCompanyID());
+            }
+        });
+
         setVisible(true);
+
     }
 
     public Company UpdateData(Company company){
