@@ -24,7 +24,7 @@ public class SignUp extends JDialog {
         super(parent);
         setTitle("Sign Up");
         setContentPane(panel1);
-        setMinimumSize(new Dimension(1440,1024));
+        setMinimumSize(new Dimension(600,400));
         setModal(true);
         setLocationRelativeTo(parent);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
