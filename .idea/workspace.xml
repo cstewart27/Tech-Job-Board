@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/Homebg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homebg.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/jobs-png-image.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/jobs-png-image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AccountDetails.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountDetails.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePageGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePageGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SignUp.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUp.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompanyAccountDetails.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanyAccountDetails.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompanySignIn.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanySignIn.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompanySignUp.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanySignUp.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompanySignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanySignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JobListingGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/JobListingGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignIn.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignIn.form" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="false" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../mysql-connector-j-8.0.33.jar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -60,9 +60,23 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HomePageGUI">
+  <component name="RunManager" selected="Application.CompanySignUp">
     <configuration name="CompanyHomePageGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CompanyHomePageGUI" />
+      <module name="TechJobBoard" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanySignIn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CompanySignIn" />
+      <module name="TechJobBoard" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanySignUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CompanySignUp" />
       <module name="TechJobBoard" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -75,15 +89,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignIn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SignIn" />
-      <module name="TechJobBoard" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SignUp" />
+    <configuration name="JobListingGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JobListingGUI" />
       <module name="TechJobBoard" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -91,10 +98,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HomePageGUI" />
-        <item itemvalue="Application.SignUp" />
+        <item itemvalue="Application.CompanySignUp" />
+        <item itemvalue="Application.JobListingGUI" />
         <item itemvalue="Application.CompanyHomePageGUI" />
-        <item itemvalue="Application.SignIn" />
+        <item itemvalue="Application.CompanySignIn" />
+        <item itemvalue="Application.HomePageGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682768346461</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial Commit">
+      <created>1682833745553</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682833745553</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
