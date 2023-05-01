@@ -13,13 +13,13 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8">
-      <console name="MySQL JobListing Connection" type="STANDARD" schema="JobListingDatabase" session="Main"><![CDATA[select * from Candidates
+      <console name="MySQL JobListing Connection" type="STANDARD" schema="JobListingDatabase" session="Main">select * from Candidates
 
 update Candidates 
 set Phone = Location = ?', Desired_Salary = 0, Phone = 'Unspecified', Skills = 'Unspecified'
 where CandidateID = 6;
 
-delete from Candidates where CandidateID = 6;]]></console>
+delete from Candidates where CandidateID = 6;</console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -29,7 +29,7 @@ delete from Candidates where CandidateID = 6;]]></console>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" object-ref="schemas/joblistingdatabase/tables/companies" />
+      <object connection-id="c4cc7135-1a3f-4d9c-b8b3-e31796fc3eb8" object-ref="schemas/joblistingdatabase/tables/joblisting" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">

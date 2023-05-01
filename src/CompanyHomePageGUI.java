@@ -13,20 +13,9 @@ public class CompanyHomePageGUI extends JFrame {
         // Set the title and size of the frame
         setTitle("Tech Job Portal for Companies");
         setSize(600, 400);
+        setLocationRelativeTo(null);
 
 
-        // Create a panel for the welcome message
-    /*    JPanel welcomePanel = new JPanel(new GridBagLayout());
-        GridBagConstraints c = new GridBagConstraints();
-        JLabel welcomeLabel = new JLabel("Welcome to Tech Job Portal");
-        welcomeLabel.setFont(new Font("Arial", Font.BOLD, 30));
-        c.gridx = 0;
-        c.gridy = 0;
-        c.weightx = 1;
-        c.weighty = 1;
-        c.anchor = GridBagConstraints.CENTER;
-        welcomePanel.add(welcomeLabel, c);
-*/
         // Create a panel for the menu bar and buttons
         JPanel menuPanel = new JPanel(new GridLayout(1, 4));
         JButton logOutButton = new JButton("Log Out");
@@ -37,6 +26,13 @@ public class CompanyHomePageGUI extends JFrame {
         menuPanel.add(jobListingButton);
         menuPanel.add(createPostingButton);
         menuPanel.add(accountButton);
+
+        JPanel panel = new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+        panel.setPreferredSize(new Dimension(600, 400));
+        panel.setMinimumSize(new Dimension(600, 400));
+        panel.setMaximumSize(new Dimension(600, 400));
+
 
         createPostingButton.addActionListener(e -> {
             dispose();
@@ -63,8 +59,12 @@ public class CompanyHomePageGUI extends JFrame {
                     jobListingButton1.setMinimumSize(new Dimension(150, 40));
                     jobListingButton1.setMaximumSize(new Dimension(150, 40));
                     jobListingButton1.setMargin(new Insets(20, 20, 20, 20));
-                    add(jobListingButton1);
-                    System.out.println("Added button" + buttonText);
+                    jobListingButton1.setAlignmentX(Component.CENTER_ALIGNMENT);
+                    panel.add(jobListingButton1);
+                    getContentPane().add(panel);
+                    pack();
+                    setLocationRelativeTo(null);
+                    System.out.println("Added button " + buttonText);
                     setVisible(true);
                 }
 
