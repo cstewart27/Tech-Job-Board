@@ -79,7 +79,7 @@ public class JobListingGUI extends JDialog{
                 //goes to user homepage
                 if(Company.getCurrentCompanyID() == 1 && User.getCurrentUserID() > 1){
                     dispose();
-                    HomePageGUI2 homePageGUI = new HomePageGUI2(null);
+                    HomePageGUI2 homePageGUI = new HomePageGUI2();
                 }
                 if(User.getCurrentUserID() == 1 && Company.getCurrentCompanyID() > 1){
                     dispose();
@@ -122,7 +122,7 @@ public class JobListingGUI extends JDialog{
         }
 
         if(Company.getCurrentCompanyID() == 1 && User.getCurrentUserID() > 1){
-            HomePageGUI2 homePageGUI = new HomePageGUI2(null);
+            HomePageGUI2 homePageGUI = new HomePageGUI2();
         }
         if(User.getCurrentUserID() == 1 && Company.getCurrentCompanyID() > 1){
             CompanyHomePageGUI companyHomePageGUI = new CompanyHomePageGUI();

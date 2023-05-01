@@ -68,7 +68,7 @@ public class AccountDetails extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose();
-                HomePageGUI2 homePageGUI = new HomePageGUI2(null);
+                HomePageGUI2 homePageGUI = new HomePageGUI2();
             }
         });
         updateAccountDetailsButton.addActionListener(new ActionListener() {

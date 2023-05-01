@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="phone validation in AccountDetails and CompanyAccountDetails">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="9a500a06-af08-42b3-8a6c-ad8249b7fbbe" name="Changes" comment="add vertical button layout CompanyHomePageGUI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompanyHomePageGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanyHomePageGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePageGUI2.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePageGUI2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePageGUI2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JobListingGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JobListingGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,9 +115,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CompanySignIn" />
+        <item itemvalue="Application.HomePageGUI2" />
         <item itemvalue="Application.SignUp" />
         <item itemvalue="Application.CompanyHomePageGUI" />
-        <item itemvalue="Application.HomePageGUI2" />
         <item itemvalue="Application.HomePageGUI" />
       </list>
     </recent_temporary>
@@ -169,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682894247968</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add vertical button layout CompanyHomePageGUI">
+      <created>1682900792557</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682900792557</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,7 +206,8 @@
     <MESSAGE value="delete match and add delete account from company and user" />
     <MESSAGE value="add CreateJobListing and update CompanyHomePageGUI" />
     <MESSAGE value="phone validation in AccountDetails and CompanyAccountDetails" />
-    <option name="LAST_COMMIT_MESSAGE" value="phone validation in AccountDetails and CompanyAccountDetails" />
+    <MESSAGE value="add vertical button layout CompanyHomePageGUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="add vertical button layout CompanyHomePageGUI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

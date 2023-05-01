@@ -39,7 +39,7 @@ public class SignIn extends JDialog{
                 if(user != null){
                     dispose();
                     User.setCurrentUserID(user.CandidateID);
-                    HomePageGUI2 homepage = new HomePageGUI2(null);
+                    HomePageGUI2 homepage = new HomePageGUI2();
                 }
                 else{
                     JOptionPane.showMessageDialog(SignIn.this, "Email or Password Invalid","Try Again", JOptionPane.ERROR_MESSAGE);
